@@ -9,7 +9,7 @@ class HomePage extends StatefulWidget {
   State<HomePage> createState() => _HomePageState();
 }
 class _HomePageState extends State<HomePage> {
-  final bool _isLogin = false;
+  final bool _isLogin = true;
 
   @override
   Widget build(BuildContext context) {
@@ -72,10 +72,7 @@ class _HomePageState extends State<HomePage> {
                 ),
               ),
               Container(
-
                 child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-
                   children: [
                     _isLogin?
                     Container(
@@ -130,20 +127,12 @@ class _HomePageState extends State<HomePage> {
                             ,
                           ],
                         ),
-
-
-
                     const SizedBox(
                       height: 8,
                     )
-
                   ],
                 ),
               ),
-
-
-
-
             ],
           ),
         ),
